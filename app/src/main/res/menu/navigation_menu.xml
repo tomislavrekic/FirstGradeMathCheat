@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Inav1"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="About"/>
+    <item android:id="@+id/Inav2"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Something"/>
+    <item android:id="@+id/Inav3"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Something else"/>
+
+</menu>

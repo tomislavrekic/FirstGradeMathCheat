@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "654933360941",
+    "firebase_url": "https://firstgrademathcheat.firebaseio.com",
+    "project_id": "firstgrademathcheat",
+    "storage_bucket": "firstgrademathcheat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654933360941:android:35d58d90fa532456",
+        "android_client_info": {
+          "package_name": "hr.ferit.rekca.firstgrademathcheat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654933360941-l61k6rhnrmkhgmlnf1p1re1snds9vs7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkyx3XvXWfyAwwaDZToFQJOZp3_stJ8VQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
