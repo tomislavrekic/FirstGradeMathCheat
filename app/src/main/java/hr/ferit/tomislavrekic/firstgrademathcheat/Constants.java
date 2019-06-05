@@ -15,4 +15,11 @@ public class Constants {
     public static final float IMAGE_STD = 128.0f;
 
     public static final String TAG = "DebugTag7";
+
+    public static final String F_IMAGE_KEY = "FImageKey";
+    public static final String F_TEXT_KEY = "FTextKey";
+
+    public static final String[] HELP_IMAGES = {"FGMCHelp1.jpg", "FGMCHelp2.jpg", "FGMCHelp3.jpg"};
+
+
 }

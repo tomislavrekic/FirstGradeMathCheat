@@ -36,6 +36,8 @@ import static hr.ferit.tomislavrekic.firstgrademathcheat.Constants.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static Context mContext;
+
     private BroadcastReceiver receiver;
     private IntentFilter filter;
 
@@ -54,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mContext = getApplicationContext();
 
         initViews();
         initBtnListeners();
@@ -81,11 +85,18 @@ public class MainActivity extends AppCompatActivity {
                 switch(id)
                 {
                     case R.id.Inav1:
-                        Toast.makeText(MainActivity.this, "Uno",Toast.LENGTH_SHORT).show();break;
+                        Toast.makeText(MainActivity.this, "Uno",Toast.LENGTH_SHORT).show();
+
+                        break;
                     case R.id.Inav2:
-                        Toast.makeText(MainActivity.this, "Dos",Toast.LENGTH_SHORT).show();break;
+                        Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivityIfNeeded(intent, 0);
+                        break;
                     case R.id.Inav3:
-                        Toast.makeText(MainActivity.this, "Tres", Toast.LENGTH_SHORT).show();break;
+                        Toast.makeText(MainActivity.this, "Tres", Toast.LENGTH_SHORT).show();
+
+                        break;
                     default:
                         return true;
                 }

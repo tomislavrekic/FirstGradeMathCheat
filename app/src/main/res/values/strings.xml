@@ -2,4 +2,16 @@
     <string name="app_name">First Grade Math Cheat</string>
     <string name="NavOpen">open</string>
     <string name="NavClose">close</string>
+    <string name="NavMenu1">About</string>
+    <string name="NavMenu2">Help</string>
+    <string name="NavMenu3">Something</string>
+    <string-array name="HelpTexts">
+
+        <item>"Press the OPEN CAMERA button to open the phone's camera"</item>
+
+        <item>"Find an equation written with words as shown. Only PLUS and MINUS operations are supported. \nPress TAKE PICTURE once you get a clear view of the equation."</item>
+
+        <item>"The app has calculated the value of the equation, the result is shown at the bottom. Scroll down to see the number if the textbox is full. \nIf the equation hasn't been read correctly, please try again."</item>
+
+    </string-array>
 </resources>
