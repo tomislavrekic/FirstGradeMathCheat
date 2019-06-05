@@ -97,10 +97,7 @@ public class HelpActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                finish();
+                onBackPressed();
                 return true;
 
             default:

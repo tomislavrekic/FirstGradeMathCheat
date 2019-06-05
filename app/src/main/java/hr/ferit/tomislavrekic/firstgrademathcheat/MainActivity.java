@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -31,6 +32,7 @@ import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 import static hr.ferit.tomislavrekic.firstgrademathcheat.Constants.*;
 
@@ -78,6 +80,25 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = findViewById(R.id.nvNav);
+
+        ImageView image = navigationView.getHeaderView(0).findViewById(R.id.ivNavImage);
+
+        InputStream stream = null;
+        AssetManager assetManager = getAssets();
+
+        try{
+            stream = assetManager.open(Constants.APP_LOGO);
+        }
+        catch (IOException e){
+            Log.e(TAG, "getImages: " + e.toString());
+        }
+
+        if(stream != null){
+            Bitmap temp = BitmapFactory.decodeStream(stream);
+            Bitmap scaled = Bitmap.createScaledBitmap(temp, temp.getWidth()/2,temp.getHeight()/2,true);
+            image.setImageBitmap(scaled);
+        }
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -85,13 +106,14 @@ public class MainActivity extends AppCompatActivity {
                 switch(id)
                 {
                     case R.id.Inav1:
-                        Toast.makeText(MainActivity.this, "Uno",Toast.LENGTH_SHORT).show();
-
+                        Intent intent1 = new Intent(MainActivity.this, AboutActivity.class);
+                        intent1.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivityIfNeeded(intent1, 0);
                         break;
                     case R.id.Inav2:
-                        Intent intent = new Intent(MainActivity.this, HelpActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                        startActivityIfNeeded(intent, 0);
+                        Intent intent2 = new Intent(MainActivity.this, HelpActivity.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivityIfNeeded(intent2, 0);
                         break;
                     case R.id.Inav3:
                         Toast.makeText(MainActivity.this, "Tres", Toast.LENGTH_SHORT).show();

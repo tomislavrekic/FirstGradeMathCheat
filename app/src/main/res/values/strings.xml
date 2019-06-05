@@ -14,4 +14,6 @@
         <item>"The app has calculated the value of the equation, the result is shown at the bottom. Scroll down to see the number if the textbox is full. \nIf the equation hasn't been read correctly, please try again."</item>
 
     </string-array>
+    <string name="AboutText">"An app made as a school project. \n\nThe idea was to create a classic equation solver which would get input via OCR. \nHowever, as OCR was unable to read symbols well, an idea came to mind.
+        \nThus, this gimmick was created, which would solve equations written into words. In turn, this project turned into something interesting, but useless."</string>
 </resources>

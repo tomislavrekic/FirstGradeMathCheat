@@ -26,6 +26,9 @@
         <activity android:name="hr.ferit.tomislavrekic.firstgrademathcheat.HelpActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name="hr.ferit.tomislavrekic.firstgrademathcheat.AboutActivity"
+            android:screenOrientation="portrait"/>
+
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
             android:value="ocr" />
