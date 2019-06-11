@@ -22,6 +22,7 @@ public class Constants {
     public static final String[] HELP_IMAGES = {"FGMCHelp1.jpg", "FGMCHelp2.jpg", "FGMCHelp3.jpg"};
 
     public static final String APP_LOGO = "FGMCLogo.png";
+    public static final String FGMC_WEB_ADRESS = "https://tomislavrekic.github.io/FGMC-website/";
 
 
 }

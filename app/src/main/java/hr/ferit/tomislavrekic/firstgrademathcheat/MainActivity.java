@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -116,7 +117,8 @@ public class MainActivity extends AppCompatActivity {
                         startActivityIfNeeded(intent2, 0);
                         break;
                     case R.id.Inav3:
-                        Toast.makeText(MainActivity.this, "Tres", Toast.LENGTH_SHORT).show();
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(FGMC_WEB_ADRESS));
+                        startActivity(browserIntent);
 
                         break;
                     default:

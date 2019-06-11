@@ -4,7 +4,7 @@
     <string name="NavClose">close</string>
     <string name="NavMenu1">About</string>
     <string name="NavMenu2">Help</string>
-    <string name="NavMenu3">Something</string>
+    <string name="NavMenu3">Website</string>
     <string-array name="HelpTexts">
 
         <item>"Press the OPEN CAMERA button to open the phone's camera"</item>
@@ -15,5 +15,5 @@
 
     </string-array>
     <string name="AboutText">"An app made as a school project. \n\nThe idea was to create a classic equation solver which would get input via OCR. \nHowever, as OCR was unable to read symbols well, an idea came to mind.
-        \nThus, this gimmick was created, which would solve equations written into words. In turn, this project turned into something interesting, but useless."</string>
+        \nThus, this gimmick was created, which would solve equations written into words. This project turned into something interesting, but useless."</string>
 </resources>
